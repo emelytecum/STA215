@@ -1,9 +1,9 @@
 # STA215
-This is my final porject for my STA215 class where I analyzied the scenes throughout the TV show "Dexter" by using different varibles. I analyzed the duration of a scene, the amount of dead bodies on a scene, rather there was a crime committed during the scene, and if the crime was solved throughout the scene. I decied to research on rather the occurance of crime effects if a crime is solved. 
+This is my final porject for my STA215 class where I analyzed the scenes throughout the TV show "Dexter" by using different varibles. I analyzed the duration of a scene, the amount of dead bodies on a scene, rather there was a crime committed during the scene, and if the crime was solved throughout the scene. I decied to research on rather the occurance of crime effects if a crime is solved. 
 # Instructions 
 To utilize the scripit, open "project.R" where it contains the codes I ultized for my research. To acess the dataset, open the "raw_data.csv" file. 
 # Data 
-The data collected focus on aspects of crime that occured and crimes that were solved thoughout the first seaosn of Dexter. Thus measueinf the qualitative varibles being if there was a crime commited in the scenes. Along with the crimes being solved throughout the scenes. The main goal of the analysis was to determin if the occurance of crime effected the chances of a crime being solved. I anaylized the scenes on each time there was a new location (work, home, crime scene, other). After my data was collected I had 147 observation. 
+The data collected focus on aspects of crime that occured and crimes that were solved thoughout the first seaosn of Dexter. Measuring the qualitative varibles being if there was a crime commited in the scenes. Along with the crimes being solved throughout the scenes. The main goal of the analysis was to determin if the occurance of crime effected the chances of a crime being solved. I anaylized the scenes on each time there was a new location (work, home, crime scene, other). After my data was collected I had 147 observation. 
 # Operationalization
 The concepet of crimes being solved was operationalized by the duration of a scene. In order to conduct if the crime is being solved in the scene I had four location (work, home, crime scenme other). I created a qualitative varible using 0=No 1=Yes. 
 
