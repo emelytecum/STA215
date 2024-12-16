@@ -21,10 +21,18 @@ table(raw_data$crime_solved)
 mean(raw_data$crime_solved)
 sd(raw_data$crime_solved)
 
+
 table(raw_data$dead_body_count)
 mean(raw_data$dead_body_count)
+sd(raw_data$dead_body_count)
+min(raw_data$dead_body_count)
+max(raw_data$dead_body_count)
 
-
+table(raw_data$scene_time)
+mean(raw_data$scene_time)
+sd(raw_data$scene_time)
+min(raw_data$scene_time)
+max(raw_data$scene_time)
 
 Figure 1: boxplot
 lm(dead_body_count ~ crime, data = raw_data)
@@ -50,6 +58,16 @@ resid(dead_body_count ~ scene_time, data = raw_data)
 abline(h = 0, col= "red")
 
 table 2: contigence table 
-table(raw_data$crime, raw_data$crime_solved)
 
-chisq.test(raw_data$crime, raw_data$crime_solved)
+# Create the contingency table
+crime_table <- matrix(c(3, 36, 2, 106), nrow = 2, byrow = TRUE)
+rownames(crime_table) <- c("Crime Yes", "Crime No")
+colnames(crime_table) <- c("Solved Yes", "Solved No")
+crime_table <- as.table(crime_table)
+
+# Perform the chi-square test
+chi_sq_test <- chisq.test(crime_table)
+
+# Output the results
+crime_table
+chi_sq_test
